@@ -6,6 +6,6 @@ mixin pojectItem (data)
         h3.project-item__heading= data.name
         div
           span.project-item__descript-text= data.square
-          span.project-item__descript-text= data.rooms
+          span.project-item__descript-text.project-item__descript-text_indent= data.rooms
       .project-item__descript_bottom
         span.project-item__descript-text= data.price
