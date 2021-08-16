@@ -1,3 +1,5 @@
+include variables
+
 header.header.container-wrap
   .header__logo
     a(href='/')
@@ -9,11 +11,8 @@ header.header.container-wrap
       br
       |в Краснодарском крае
   .header__menu
-    a(href='#').header__link Строительство
-    a(href='#').header__link Проекты
-    a(href='#').header__link Услуги
-    a(href='#').header__link Галерея объектов
-    a(href='#').header__link Отзывы
-    a(href='#').header__link Контакты
+    for link in linkMenu
+      a(href=link.pageUrl).header__link= link.pageName
+
     a(href='tel:88007700133').header__link.header__link_tel 8 (800) 770-01-33
       span.header__tel-inscript Заказать звонок

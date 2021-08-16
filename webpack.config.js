@@ -195,6 +195,16 @@ let config = {
           'svgo-loader',
         ],
       },
+
+      {
+        test: /\.(json)$/,
+        use: [
+          {
+            loader: 'file-loader'
+          },
+        ],
+      },
+
     ]
   },
 

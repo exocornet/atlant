@@ -3,7 +3,35 @@ body {
   font-size: 12px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container-wrap {
   max-width: 1340px;
   margin: 0 auto;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #25292f;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  background: linear-gradient(91.89deg, #C5000E 1.57%, #FB0000 95.62%), #C5000E;
+  border-radius: 2px;
+  border: 0;
+  padding: 15px 50px;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(0deg, #C5000E 1.57%, #FB0000 95.62%), #C5000E;
+  }
 }
