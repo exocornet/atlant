@@ -2,36 +2,43 @@ const path = require('path');
 const fs = require('fs');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const HtmlsWebpackPlugin = require('htmls-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const pug = require('pug');
+// const HtmlsWebpackPlugin = require('htmls-webpack-plugin');
 // const globImporter = require('node-sass-glob-importer');
 
 let contPlugin = [];
 let page;
 
 //pug файлы генерируемые в html
-fs.readdirSync('./src/').forEach(file => {
-  if (String(file).endsWith('.pug')) {
+fs.readdirSync('./src/').forEach(files => {
+
+  if (String(files).endsWith('.pug')) {
+    // pug.renderFile(files);
+    console.log(pug.renderFile(`./src/${files}`), 'fgfgfg')
     page = new HtmlWebpackPlugin({
-      template: `./src/${file}`,
-      filename: `./${path.basename(file, '.pug')}.html`,
+      template: `./src/${files}`,
+      filename: `./${path.basename(files, '.pug')}.html`,
+      inject: 'body',
       minify: true,
       hash: false
       // htmls: [{
-      //   src: `./src/${file}`,
-      //   filename: `./${path.basename(file, '.pug')}.html`,
-      //   render: (file, params) => {
-      //     return pug.renderFile(file, params);
-      //   }
-      // }]
+      //   src: `./src/${files}`,
+      //   filename: `./${path.basename(files, '.pug')}.html`,
+      //   async render(file, params) {
+      //     return await pug.renderFile(file, {entry: params.entries});
+      //   },
+      // }],
+
     });
     contPlugin.push(page);
+
   }
 });
+
 
 let config = {
   entry: './src/app.js',
@@ -42,13 +49,15 @@ let config = {
 
   devServer: {
     host: 'localhost',
-    port: 3000,
+    port: 3001,
     overlay: {
       warnings: true,
       errors: true
     },
     open: true
   },
+
+  devtool: false,
 
   module: {
     rules: [
@@ -85,8 +94,14 @@ let config = {
           },
         },
       },
+
       {
-        test: /\.s?css$/,
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"]
+      },
+
+      {
+        test: /\.s[ac]ss$/i,
         use: [
           // 'style-loader',
           MiniCssExtractPlugin.loader,
@@ -130,7 +145,7 @@ let config = {
             loader: 'file-loader',
             options: {
               name(file) {
-                return 'public/images/[name].[ext]';
+                return 'images/[name].[ext]';
               },
             },
           },
@@ -144,7 +159,7 @@ let config = {
             loader: 'file-loader',
             options: {
               name(file) {
-                return 'public/images/[name].webp';
+                return 'images/[name].webp';
               },
             },
           },
@@ -161,7 +176,7 @@ let config = {
             loader: 'file-loader',
             options: {
               name(file) {
-                return 'public/fonts/[name].[ext]';
+                return 'fonts/[name].[ext]';
               },
             },
           },
@@ -216,16 +231,10 @@ contPlugin.push(
 
 module.exports = (env, argv) => {
   if (argv.mode === 'development') {
-    config.devtool = false;
-  }
-
-  if (argv.mode === 'development') {
     contPlugin.push(new webpack.SourceMapDevToolPlugin({
       filename: '[file].map'
     }));
   }
-
-  console.log(argv.mode, 'aaaaaa')
 
   return config;
 }
