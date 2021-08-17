@@ -1,0 +1,51 @@
+.social-media {
+  margin-top: 65px;
+
+  &__heading {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #25292f;
+    max-width: 45%;
+  }
+
+  &__items-wrap {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+  }
+
+  &__icon {
+    color: #f2f2f2;
+  }
+
+  &__heading {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    color: #000000;
+    min-width: 60%;
+    margin-top: 40px;
+
+    &:after {
+      content: url("./public/images/social-media/arrow.png");
+    }
+  }
+
+  &__descript {
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.7);
+    max-width: 60%;
+    margin-top: 50px;
+  }
+}

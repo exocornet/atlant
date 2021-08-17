@@ -1,0 +1,10 @@
+mixin socialMedia(data)
+  .social-media__item
+    if data.icon === 'fb'
+      include ../../public/images/social-media/fb.svg
+    if data.icon === 'inst'
+      include ../../public/images/social-media/inst.svg
+    if data.icon === 'ytub'
+      include ../../public/images/social-media/ytub.svg
+    p.social-media__heading= data.heading
+    p.social-media__descript= data.descript

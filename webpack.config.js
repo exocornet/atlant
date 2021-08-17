@@ -23,7 +23,7 @@ fs.readdirSync('./src/').forEach(files => {
       template: `./src/${files}`,
       filename: `./${path.basename(files, '.pug')}.html`,
       inject: 'body',
-      minify: true,
+      minify: false,
       hash: false
       // htmls: [{
       //   src: `./src/${files}`,
@@ -44,7 +44,8 @@ let config = {
   entry: './src/app.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'js/[name].js'
+    filename: 'js/[name].js',
+    publicPath: '/'
   },
 
   devServer: {
@@ -64,6 +65,17 @@ let config = {
       {
         test: /\.pug$/,
         use: [
+          // {
+          //   loader: 'html-loader-srcset',
+          //   options: {
+          //     attrs: [
+                // 'img:src',
+                // 'source:srcset',
+                // 'link:href',
+                // 'image:xlink:href',
+          //     ],
+          //   },
+          // },
           {
             loader: "html-loader"
           },
@@ -224,7 +236,7 @@ contPlugin.push(
   new CopyWebpackPlugin({
     patterns: [
       {
-        from: 'src/public',
+        from: './src/public',
         to: './'
       }
     ]

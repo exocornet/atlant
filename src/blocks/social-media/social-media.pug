@@ -1,0 +1,8 @@
+include mixin
+include variables
+
+section.social-media.container-wrap
+  h3.social-media__heading Подписывайтесь на нас и узнавайте свежие новости и акции первыми
+  .social-media__items-wrap
+    for item in social
+      +socialMedia(item)
