@@ -4,15 +4,10 @@
   &__houses-wrap {
     display: flex;
     margin-top: 45px;
+    justify-content: space-between;
   }
 
-  &__house1 {
-    width: 45%;
-  }
-  &__house2 {
-    width: 30%;
-  }
-  &__house3 {
-    width: 25%;
+  &__house {
+    width: calc(100% / 3);
   }
 }
