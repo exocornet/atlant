@@ -19,14 +19,29 @@
   &__item {
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: calc(100% / 3);
+    text-decoration: none;
+    margin-right: 100px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      .social-media__icon {
+        color: #f2f2f2cc;
+      }
+      .social-media__link-text {
+        color: #c5000e;
+      }
+    }
   }
 
   &__icon {
     color: #f2f2f2;
   }
 
-  &__heading {
+  &__link-heading {
     font-weight: 600;
     font-size: 14px;
     line-height: 1.6;
@@ -34,10 +49,12 @@
     color: #000000;
     min-width: 60%;
     margin-top: 40px;
+    background: url("./public/images/social-media/arrow.png") no-repeat top 6px right 0;
+  }
 
-    &:after {
-      content: url("./public/images/social-media/arrow.png");
-    }
+  &__link-text {
+    width: 70%;
+    display: inline-block;
   }
 
   &__descript {
