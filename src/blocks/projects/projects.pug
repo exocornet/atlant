@@ -6,10 +6,8 @@ section.projects.container-wrap
   .projects__header
     h2.heading Проекты
     .filter
-      a(href='#').filter__button Площадь
-      a(href='#').filter__button Архитектурный стиль
-      a(href='#').filter__button Количество спален
-      a(href='#').filter__button Количество комнат
+      for item in filterItem
+        a(href=item.href).filter__button= item.name
 
   .projects__wrapper-items
     for item in pojectItem

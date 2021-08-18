@@ -1,0 +1,9 @@
+include variables
+
+section.choose-us.container-wrap
+  h2.heading Почему выбирают нас
+  .choose-us__items
+    for item in chooseUs
+      .choose-us__item
+        .choose-us__title= item.title
+        .choose-us__descript= item.descript

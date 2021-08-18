@@ -1,0 +1,36 @@
+.choose-us {
+  margin-top: 110px;
+  border-bottom: 1px solid rgba(28, 36, 47, 0.15);
+  padding-bottom: 70px;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+  }
+
+  &__item {
+    width: calc(100% / 3);
+    margin-right: 105px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+
+  &__descript {
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.7);
+  }
+}

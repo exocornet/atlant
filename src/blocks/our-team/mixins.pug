@@ -1,0 +1,6 @@
+mixin staffItem(data)
+  .our-team__item
+    img(src='./public/images/our-team/' + data.foto).our-team__foto
+    .our-team__data-wrap
+      p.our-team__fio= data.fio
+      p.our-team__position= data.position

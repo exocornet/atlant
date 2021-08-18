@@ -1,0 +1,9 @@
+include variables
+include mixins
+
+section.our-team.container-wrap
+  h2.heading Наша команда
+  p.heading__descript Над вашим проектом работает сплоченная команда специалистов со стажем более 10 лет
+  .our-team__wrap-staff
+    for item in staffItem
+      +staffItem(item)
