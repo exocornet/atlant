@@ -7076,6 +7076,11 @@
   "resolved" "https://registry.npmjs.org/slash/-/slash-3.0.0.tgz"
   "version" "3.0.0"
 
+"slick-slider@^1.8.2":
+  "integrity" "sha512-/NGT7QzlC1/LNu198ad+rM8xJcgSXgiptUPbY0oMmtZ/8K2G9s6mMpLo7um6FIIQ135vUjsnP2gWY5DKJe2qJw=="
+  "resolved" "https://registry.npmjs.org/slick-slider/-/slick-slider-1.8.2.tgz"
+  "version" "1.8.2"
+
 "snake-case@^2.1.0":
   "integrity" "sha1-Qb2xtz8w7GagTU4srRt2OH1NbZ8="
   "resolved" "https://registry.npmjs.org/snake-case/-/snake-case-2.1.0.tgz"

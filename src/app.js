@@ -4,3 +4,14 @@ import './main.scss'
 import * as $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
+
+// Подключение слайдера
+import 'slick-slider/slick/slick.scss'
+import 'slick-slider/slick/slick-theme.scss'
+import 'slick-slider/slick/slick.min'
+
+
+import './blocks/completed-projects/slider-completed-project'
+import './blocks/blog/slider-blog'
+
+

@@ -10,6 +10,17 @@ img {
 .container-wrap {
   max-width: 1340px;
   margin: 0 auto;
+
+  @media only screen and (max-width: 959px) {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 479px) {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
 }
 
 .heading {

@@ -487,6 +487,7 @@
     "shebang-regex": "^3.0.0",
     "signal-exit": "^3.0.3",
     "slash": "^3.0.0",
+    "slick-slider": "^1.8.2",
     "snake-case": "^2.1.0",
     "snapdragon": "^0.8.2",
     "snapdragon-node": "^2.1.1",
