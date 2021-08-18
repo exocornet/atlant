@@ -1,0 +1,28 @@
+include variables
+
+footer.footer.container-wrap
+  nav.footer__links-wrap
+    .footer__link-items
+      for item in footerLink1
+        a(href=item.href).footer__link-item= item.title
+    .footer__link-items
+      for item in footerLink2
+        a(href=item.href).footer__link-item= item.title
+    .footer__link-items
+      for item in footerLink3
+        a(href=item.href).footer__link-item= item.title
+    .footer__link-items
+      a(href='tel:88007700133').footer__link-tel 8 (800) 770-01-33
+      span.footer__adres
+        | 350072, г. Краснодар,
+        br
+        | ул. Московская, 48
+  .rights-reserved
+    p.rights-reserved__text Атлант © 2021 Все права защищены
+    .icons-social
+      a(href='#').icons-social__link
+        include ../../public/images/footer/ico-fb.svg
+      a(href='#').icons-social__link
+        include ../../public/images/footer/ico-inst.svg
+      a(href='#').icons-social__link
+        include ../../public/images/footer/ico-twit.svg
