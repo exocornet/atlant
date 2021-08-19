@@ -1,9 +1,8 @@
 $('.slider-blog').slick({
-  breakpoint: 1440,
   centerMode: true,
   infinite: true,
-  slidesToShow: 3,
-  centerPadding: "0px",
+  slidesToShow: 2,
+  centerPadding: "150px",
   responsive: [
     {
       breakpoint: 768,

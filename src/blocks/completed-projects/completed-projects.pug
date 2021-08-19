@@ -1,17 +1,20 @@
+include variables
+include mixins
+
+
 section.completed-projects
   .container-wrap
     h2.heading Выполненные проекты
     p.heading__descript 6 семей заселятся уже в этом месяце!
   .slider-completed-project
-    figure
-      img(src='./public/images/blog/slide1.jpg').slider-blog__img
-      figcaption.slider-blog__figcaption Причины переезда
-    figure
-      img(src='./public/images/blog/slide2.jpg').slider-blog__img
-      figcaption.slider-blog__figcaption Купить земельный участок в Краснодаре
-    figure
-      img(src='./public/images/blog/slide1.jpg').slider-blog__img
-      figcaption.slider-blog__figcaption Причины переезда
-    figure
-      img(src='./public/images/blog/slide2.jpg').slider-blog__img
-      figcaption.slider-blog__figcaption Причины переезда
+    for item in sliderCompletedProject
+      +sliderCompletedProject(item)
+
+    //div
+    //  img(src='./public/images/completed-projects/slider-img1.jpg').slider-completed-project__img
+    //
+    //div
+    //  img(src='./public/images/blog/slide2.jpg').slider-completed-project__img
+    //
+    //div
+    //  img(src='./public/images/blog/slide2.jpg').slider-completed-project__img

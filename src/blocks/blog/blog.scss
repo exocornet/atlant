@@ -5,14 +5,19 @@
 .slider-blog {
   margin-top: 90px;
   overflow: hidden;
-  height: 350px;
+  width: 100%;
 
-  .slick-slide {
-    margin: 0 10px;
+  &__item-wrap {
+    div {
+      display: inline-flex;
+      flex-direction: column;
+      margin: 0 auto;
+      padding-left: 15px;
+    }
   }
 
-  figure {
-
+  &__img {
+    margin: 0 auto;
   }
 
   &__figcaption {
@@ -20,5 +25,12 @@
     font-size: 16px;
     line-height: 1.7;
     margin-top: 23px;
+    text-decoration: none;
+    color: #000000;
+    display: block;
+
+    &:hover {
+      color: #c5000e;
+    }
   }
 }

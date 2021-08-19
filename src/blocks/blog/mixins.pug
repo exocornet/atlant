@@ -1,0 +1,5 @@
+mixin sliderBlog(data)
+  div.slider-blog__item-wrap
+    div
+      img(src='./public/images/blog/' + data.img).slider-blog__img
+      a(href='#').slider-blog__figcaption= data.caption

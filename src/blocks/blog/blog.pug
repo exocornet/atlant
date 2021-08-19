@@ -1,16 +1,9 @@
+include variables
+include mixins
+
 section.blog
   .container-wrap
     h2.heading Блог
   .slider-blog
-    figure
-      img(src='./public/images/blog/slide1.jpg').slider-blog__img
-      figcaption.slider-blog__figcaption Причины переезда
-    figure
-      img(src='./public/images/blog/slide2.jpg').slider-blog__img
-      figcaption.slider-blog__figcaption Купить земельный участок в Краснодаре
-    figure
-      img(src='./public/images/blog/slide1.jpg').slider-blog__img
-      figcaption.slider-blog__figcaption Причины переезда
-    figure
-      img(src='./public/images/blog/slide2.jpg').slider-blog__img
-      figcaption.slider-blog__figcaption Причины переезда
+    for item in sliderBlog
+      +sliderBlog(item)

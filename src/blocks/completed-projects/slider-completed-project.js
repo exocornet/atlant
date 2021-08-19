@@ -1,9 +1,7 @@
 $('.slider-completed-project').slick({
-  breakpoint: 1440,
   centerMode: true,
-  infinite: true,
-  slidesToShow: 3,
-  centerPadding: "0px",
+  slidesToShow: 1,
+  centerPadding: '200px',
   responsive: [
     {
       breakpoint: 768,
