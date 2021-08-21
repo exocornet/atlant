@@ -10,7 +10,8 @@ import 'slick-slider/slick/slick.scss'
 import 'slick-slider/slick/slick-theme.scss'
 import 'slick-slider/slick/slick.min'
 
-
+// Настройки слайдеров
+import './blocks/slider/slider'
 import './blocks/completed-projects/slider-completed-project'
 import './blocks/blog/slider-blog'
 

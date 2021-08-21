@@ -1,11 +1,47 @@
 mixin pojectItem (data)
-  .project-item
-    img(src='public/images/projects/' + data.img).project-item__img
-    .project-item__descript
-      .project-item__descript_top
-        h3.project-item__heading= data.name
-        div
-          span.project-item__descript-text= data.square
-          span.project-item__descript-text.project-item__descript-text_indent= data.rooms
-      .project-item__descript_bottom
-        span.project-item__descript-text= data.price
+  .hover-wrapper
+    .project-item
+      img(src='public/images/projects/' + data.img).project-item__img
+      .project-item__descript
+        .project-item__descript_top
+          h3.project-item__heading= data.name
+          div
+            span.project-item__descript-text= data.square
+            span.project-item__descript-text.project-item__descript-text_indent= data.rooms
+        .project-item__descript_bottom
+          span.project-item__descript-text= data.price
+
+      .project-item__descript_hover.trans
+        .project-item__descript_top
+          h3.project-item__heading= data.name
+          div
+            span.project-item__descript-text= data.square
+            span.project-item__descript-text.project-item__descript-text_indent= data.rooms
+        .project-item__descript_bottom
+          span.project-item__descript-text= data.price
+
+
+        .project-item__descript_top
+          h3.project-item__heading= data.name
+          div
+            span.project-item__descript-text= data.square
+            span.project-item__descript-text.project-item__descript-text_indent= data.rooms
+        .project-item__descript_bottom
+          span.project-item__descript-text= data.price
+
+        .project-item__descript_top
+          h3.project-item__heading= data.name
+          div
+            span.project-item__descript-text= data.square
+            span.project-item__descript-text.project-item__descript-text_indent= data.rooms
+        .project-item__descript_bottom
+          span.project-item__descript-text= data.price
+
+        .project-item__descript_top
+          h3.project-item__heading= data.name
+          div
+            span.project-item__descript-text= data.square
+            span.project-item__descript-text.project-item__descript-text_indent= data.rooms
+        .project-item__descript_bottom
+          span.project-item__descript-text= data.price
+

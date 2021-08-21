@@ -42,18 +42,13 @@
     color: rgba(28, 36, 47, 0.54);
   }
 
-  &.slick-slider {
-    //width: 90%;
-    //margin: 0 auto;
-  }
-
   & .slick-prev-custom, & .slick-next-custom {
     position: absolute;
     display: block;
-    height: 20px;
+    height: 40px;
     width: 55px;
-    line-height: 0px;
-    font-size: 0px;
+    line-height: 0;
+    font-size: 0;
     cursor: pointer;
     background: transparent;
     top: 50%;
