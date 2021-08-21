@@ -3,6 +3,8 @@ $('.slider-blog').slick({
   infinite: true,
   slidesToShow: 2,
   centerPadding: "150px",
+  focusOnSelect: true,
+  arrows: false,
   responsive: [
     {
       breakpoint: 768,

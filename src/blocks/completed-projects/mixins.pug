@@ -1,3 +1,11 @@
 mixin sliderCompletedProject(data)
   div
     img(src='./public/images/completed-projects/' + data.img).slider-completed-project__img
+
+mixin sliderCompletedProjectNav(data)
+  div
+    div.slider-completed-project-nav__wrap-item
+      img(src="./public/images/completed-projects/" + data.img).slider-completed-project-nav__img
+      div
+        p.slider-completed-project-nav__text= data.text
+        span.slider-completed-project-nav__author= data.author
