@@ -55,7 +55,6 @@
   margin-bottom: 55px;
   cursor: pointer;
   height: 100%;
-  z-index: 999;
 
   &:hover {
     outline: 1px solid #dfdfdf;
@@ -64,11 +63,12 @@
   }
 
   &__descript_hover {
-    display: none;
     z-index: 999;
     margin-top: 30px;
     padding: 0 25px;
-    position: relative;
+    position: absolute;
+    opacity: 0;
+    top: -30px;
   }
 
 
@@ -79,8 +79,10 @@
   &:hover &__descript_hover {
     background: #fff;
     z-index: 999;
-    height: auto;
-    display: block;
+    top: 0;
+    opacity: 1;
+    transition: all 0.5s;
+    position: relative;
   }
 
   &__img {
