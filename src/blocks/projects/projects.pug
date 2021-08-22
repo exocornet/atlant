@@ -3,15 +3,18 @@ include variables
 
 section.projects.container-wrap
 
+  //- Шапка проектов
   .projects__header
     h2.heading Проекты
     .filter
       for item in filterItem
         a(href=item.href).filter__button= item.name
 
+  //- Карточки проектов
   .projects__wrapper-items
     for item in pojectItem
       +pojectItem(item)
 
+  //- Кнопка
   .projects__wrapper-button
     button.button Показать еще

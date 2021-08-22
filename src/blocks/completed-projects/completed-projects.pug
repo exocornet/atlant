@@ -6,10 +6,14 @@ section.completed-projects
   .container-wrap
     h2.heading Выполненные проекты
     p.heading__descript 6 семей заселятся уже в этом месяце!
+
+
+  //- Слайдер
   .slider-completed-project
     for item in sliderCompletedProject
       +sliderCompletedProject(item)
 
+  //- Слайдер второй служащий навигационным
   .slider-completed-project-nav
     for item in sliderCompletedProjectNav
       +sliderCompletedProjectNav(item)

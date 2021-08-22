@@ -11,6 +11,13 @@
     margin: 0 auto;
   }
 
+  .slick-slide {
+    opacity: 0.6;
+  }
+
+  .slick-active {
+    opacity: 1;
+  }
 }
 
 .slider-completed-project-nav {

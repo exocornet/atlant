@@ -7,6 +7,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 75px;
+
+    @include media(1024px) {
+      margin-top: 50px;
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -15,6 +20,12 @@
 
     &:last-child {
       margin-right: 0;
+    }
+
+    @include media(1024px) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 45px;
     }
   }
 

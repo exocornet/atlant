@@ -33,4 +33,13 @@
       color: #c5000e;
     }
   }
+
+  @include media(1024px) {
+    .slick-slide {
+      opacity: 0.6;
+    }
+    .slick-active {
+      opacity: 1;
+    }
+  }
 }

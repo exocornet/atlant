@@ -6,11 +6,11 @@ $('.slider-completed-project').slick({
   arrows: false,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1024,
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '0px',
+        centerPadding: '200px',
         slidesToShow: 1,
       }
     },

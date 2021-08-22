@@ -7,12 +7,13 @@ $('.slider-blog').slick({
   arrows: false,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1024,
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '0px',
-        slidesToShow: 1
+        centerPadding: '220px',
+        slidesToShow: 1,
+        infinite: true,
       }
     },
     {
