@@ -2,6 +2,24 @@ section.houses-cost
   .container-wrap
     h2.heading Дома по стоимости
   .houses-cost__houses-wrap
-    img(src='public/images/houses-cost/houses1.png').houses-cost__house
-    img(src='public/images/houses-cost/houses2.png').houses-cost__house
-    img(src='public/images/houses-cost/houses3.png').houses-cost__house
+    a(href='#').houses-cost__house
+      div.houses-cost__hover-wrapper
+        img(src='public/images/houses-cost/houses1.png').houses-cost__img
+        .houses-cost__descript
+          span.descript__cost до 7.000.0000
+          include arrow-white.svg
+          span.descript__benefits Экономим до 30% на оптовой закупке материалов
+    a(href='#').houses-cost__house
+      div.houses-cost__hover-wrapper
+        img(src='public/images/houses-cost/houses2.png').houses-cost__img
+        .houses-cost__descript
+          span.descript__cost от 7.000.0000
+          include arrow-white.svg
+          span.descript__benefits Экономим до 30% на оптовой закупке материалов
+    a(href='#').houses-cost__house
+      div.houses-cost__hover-wrapper
+        img(src='public/images/houses-cost/houses3.png').houses-cost__img.houses-cost__img_last-child
+        .houses-cost__descript
+          span.descript__cost от 12.000.0000
+          include arrow-white.svg
+          span.descript__benefits Экономим до 30% на оптовой закупке материалов

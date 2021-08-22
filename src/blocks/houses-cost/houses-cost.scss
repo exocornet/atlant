@@ -5,9 +5,86 @@
     display: flex;
     margin-top: 45px;
     justify-content: space-between;
+    overflow: hidden;
   }
 
   &__house {
     width: calc(100% / 3);
+    transition: all 1.5s;
+    height: 535px;
+    position: relative;
+
+    &:hover .houses-cost__hover-wrapper {
+      width: calc(100% + 50px);
+      transition: all 1.5s;
+      z-index: 99;
+    }
+
+    &:hover .descript__benefits {
+      position: absolute;
+      transition: all 1.5s;
+      top: 10px;
+      opacity: 1;
+    }
+
+    &:hover .descript__cost {
+      top: -45px;
+      transition: all 1.5s;
+    }
+
+    &:hover .arrow-white {
+      opacity: 1;
+      right: -60px;
+      transition: all 2.5s;
+    }
   }
+
+  &__hover-wrapper {
+    position: absolute;
+    width: 100%;
+    transition: all 1.5s;
+  }
+
+  &__img {
+    width: 100%;
+    height: 535px;
+  }
+
+  &__descript {
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    margin: 0 0 55px 55px;
+    width: 270px;
+  }
+
+  .descript {
+
+    &__cost {
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 44px;
+      display: block;
+      position: relative;
+      top: 0;
+      transition: all 1.5s;
+    }
+    &__benefits {
+      font-size: 16px;
+      line-height: 1.4;
+      letter-spacing: 0.01em;
+      position: absolute;
+      top: 0;
+      opacity: 0;
+      transition: all 1.5s;
+    }
+  }
+}
+
+.arrow-white {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  opacity: 0;
+  transition: all .5s;
 }
