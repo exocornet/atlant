@@ -2,6 +2,8 @@ mixin pojectItem (data)
   .hover-wrapper
     .project-item
       img(src='public/images/projects/' + data.img).project-item__img
+
+      //- Описание под картинкой
       .project-item__descript
         .project-item__descript_top
           h3.project-item__heading= data.name
@@ -9,39 +11,30 @@ mixin pojectItem (data)
             span.project-item__descript-text= data.square
             span.project-item__descript-text.project-item__descript-text_indent= data.rooms
         .project-item__descript_bottom
-          span.project-item__descript-text= data.price
+          span.project-item__descript-price= data.price
 
+      //- Описание под картинкой при наведении
       .project-item__descript_hover
-        .project-item__descript_top
-          h3.project-item__heading= data.name
-          div
-            span.project-item__descript-text= data.square
-            span.project-item__descript-text.project-item__descript-text_indent= data.rooms
-        .project-item__descript_bottom
-          span.project-item__descript-text= data.price
-
 
         .project-item__descript_top
           h3.project-item__heading= data.name
-          div
-            span.project-item__descript-text= data.square
-            span.project-item__descript-text.project-item__descript-text_indent= data.rooms
-        .project-item__descript_bottom
-          span.project-item__descript-text= data.price
 
-        .project-item__descript_top
-          h3.project-item__heading= data.name
-          div
-            span.project-item__descript-text= data.square
-            span.project-item__descript-text.project-item__descript-text_indent= data.rooms
-        .project-item__descript_bottom
-          span.project-item__descript-text= data.price
+        .project-item__descript_middle
+          .project-item__descript-text.project-item__descript-text_hover
+            span Общая площадь
+            span.line-dotter
+            span !{data.square}
+          .project-item__descript-text.project-item__descript-text_hover
+            span Комнаты
+            span.line-dotter
+            span !{data.rooms}
+          .project-item__descript-text.project-item__descript-text_hover
+            span Строительная площадь
+            span.line-dotter
+            span !{data.square}
 
-        .project-item__descript_top
-          h3.project-item__heading= data.name
-          div
-            span.project-item__descript-text= data.square
-            span.project-item__descript-text.project-item__descript-text_indent= data.rooms
-        .project-item__descript_bottom
+        .project-item__descript_bottom.project-item__descript_bottom_hover
           span.project-item__descript-text= data.price
+          a(href="#").project-item__descript-link подробнее
+
 

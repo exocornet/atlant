@@ -72,7 +72,7 @@
   &__descript_hover {
     z-index: 999;
     margin-top: 30px;
-    padding: 0 25px;
+    padding: 0 25px 35px;
     position: absolute;
     opacity: 0;
     top: -30px;
@@ -85,11 +85,11 @@
 
   &:hover &__descript_hover {
     background: #fff;
-    z-index: 999;
     top: 0;
     opacity: 1;
     transition: all 0.5s;
     position: relative;
+    z-index: 1000;
   }
 
   &__img {
@@ -97,7 +97,6 @@
   }
 
   &__descript {
-    z-index: 999;
     margin-top: 30px;
     padding: 0 25px;
     position: relative;
@@ -107,8 +106,18 @@
       justify-content: space-between;
     }
 
+    &_middle {
+      margin-top: 30px;
+    }
+
     &_bottom {
       text-align: right;
+
+      &_hover {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+      }
     }
   }
 
@@ -122,10 +131,43 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    color: #c5000e;
+    color: rgba(28, 36, 47, 0.54);
 
     &_indent {
       margin-left: 30px;
     }
+
+    &_hover {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
   }
+
+  &__descript-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #c5000e;
+    text-decoration: none;
+
+    &::after {
+      content: url("./public/images/projects/arrow-link.png");
+      margin-left: 10px;
+    }
+  }
+
+  &__descript-price {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #c5000e;
+  }
+}
+
+.line-dotter {
+  border-bottom: 1px dotted black;
+  flex-grow: 1;
 }

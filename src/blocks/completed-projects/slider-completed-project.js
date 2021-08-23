@@ -1,10 +1,19 @@
 $('.slider-completed-project').slick({
   centerMode: true,
   slidesToShow: 1,
-  centerPadding: '200px',
+  centerPadding: '400px',
   asNavFor: '.slider-completed-project-nav',
   arrows: false,
   responsive: [
+      {
+          breakpoint: 1550,
+          settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '200px',
+              slidesToShow: 1,
+          }
+      },
     {
       breakpoint: 1024,
       settings: {
