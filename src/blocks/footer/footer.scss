@@ -7,11 +7,21 @@
     border-bottom: 1px solid rgba(28, 36, 47, 0.15);
     display: flex;
     justify-content: space-between;
+
+    @include media(1024px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__link-items {
     display: flex;
     flex-direction: column;
+
+    @include media(1024px) {
+      &:last-child {
+        margin-top: 40px;
+      }
+    }
   }
 
   &__link-item {

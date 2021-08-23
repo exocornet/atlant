@@ -5,6 +5,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include media(1024px) {
+      display: block;
+    }
+  }
+
+  &__wrap-descript {
+    display: none;
+
+    @include media(1024px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__wrapper-items {
@@ -170,4 +183,13 @@
 .line-dotter {
   border-bottom: 1px dotted black;
   flex-grow: 1;
+}
+
+.button-filters {
+  background: transparent;
+  border: 0;
+
+  &:hover {
+    color: #c5000e;
+  }
 }
