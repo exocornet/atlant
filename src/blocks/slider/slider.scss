@@ -9,14 +9,15 @@
 
   &__img {
     height: 100%;
+    width: 100%;
   }
 
   &__wrap-descript {
     position: absolute;
     text-align: center;
     top: 20%;
-    left: -160px;
-    width: 100%;
+    left: -145px;
+    width: 640px;
   }
 
   &__descript {
