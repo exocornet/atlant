@@ -5,17 +5,17 @@ $('.slider-completed-project').slick({
   asNavFor: '.slider-completed-project-nav',
   arrows: false,
   responsive: [
-      {
-          breakpoint: 1550,
-          settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '200px',
-              slidesToShow: 1,
-          }
-      },
     {
-      breakpoint: 1024,
+      breakpoint: 1550,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '200px',
+        slidesToShow: 1,
+      }
+    },
+    {
+      breakpoint: 1025,
       settings: {
         arrows: false,
         centerMode: true,

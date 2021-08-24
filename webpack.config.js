@@ -77,12 +77,12 @@ let config = {
           //   },
           // },
           {
-            loader: "html-loader"
+            loader: "html-loader?minimize=false"
           },
           {
             loader: "pug-html-loader",
             options: {
-              "pretty": true
+              pretty: true
             }
           }
         ]

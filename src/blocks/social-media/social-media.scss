@@ -35,17 +35,15 @@
     }
 
     &:hover {
-      .social-media__icon {
-        color: #f2f2f2cc;
-      }
       .social-media__link-text {
         color: #c5000e;
       }
     }
   }
 
-  &__icon {
-    color: #f2f2f2;
+  &__img {
+    width: 103px;
+    height: 103px;
   }
 
   &__link-heading {
@@ -80,4 +78,8 @@
       display: none;
     }
   }
+}
+
+.circle-icon {
+
 }

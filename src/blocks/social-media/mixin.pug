@@ -1,11 +1,11 @@
 mixin socialMedia(data)
   a(href="#").social-media__item
     if data.icon === 'fb'
-      include ../../public/images/social-media/fb.svg
+      img(src="./public/images/social-media/fb.png").social-media__img
     if data.icon === 'inst'
-      include ../../public/images/social-media/inst.svg
+      img(src="./public/images/social-media/inst.png").social-media__img
     if data.icon === 'ytub'
-      include ../../public/images/social-media/ytub.svg
+      img(src="./public/images/social-media/ytub.png").social-media__img
     p.social-media__link-heading
       span.social-media__link-text= data.heading
     p.social-media__descript= data.descript
