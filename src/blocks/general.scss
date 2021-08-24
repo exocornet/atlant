@@ -22,7 +22,7 @@ img {
     max-width: 670px;
   }
 
-  @media only screen and (max-width: 479px) {
+  @include media(565px) {
     max-width: 320px;
   }
 }
@@ -38,6 +38,12 @@ img {
     font-weight: 600;
     font-size: 28px;
     line-height: 2;
+  }
+
+  @include media(565px) {
+    line-height: 2.8;
+    letter-spacing: -0.02em;
+    font-size: 20px;
   }
 
   &_ondark-bg {
@@ -60,6 +66,10 @@ img {
       margin-top: 20px;
       max-width: 100%;
     }
+
+    @include media(565px) {
+      font-size: 14px;
+    }
   }
 }
 
@@ -73,6 +83,11 @@ img {
   border: 0;
   padding: 15px 50px;
   cursor: pointer;
+
+  @include media(565px) {
+    width: 100%;
+    margin-top: 25px;
+  }
 
   &:hover {
     background: linear-gradient(0deg, #C5000E 1.57%, #FB0000 95.62%), #C5000E;
@@ -138,6 +153,13 @@ img {
     font-size: 15px;
     line-height: 1.5;
 
+    @include media(565px) {
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+      margin-right: 0;
+    }
+
     &:focus-visible {
       outline: 0;
       border: 1px solid rgba(28, 36, 47, 0.5);
@@ -162,5 +184,11 @@ img {
         color: #ffffff;
       }
     }
+  }
+}
+
+.br {
+  @include media(1024px) {
+    display: none;
   }
 }

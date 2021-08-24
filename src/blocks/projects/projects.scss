@@ -63,8 +63,12 @@
   position: relative;
   width: 31%;
 
-  @media only screen and (max-width: 1024px) {
+  @include media(1024px) {
     width: 45%;
+  }
+
+  @include media(565px) {
+    width: 100%;
   }
 
   &:hover {

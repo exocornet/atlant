@@ -13,6 +13,12 @@
     @include media(1024px) {
       width: 100%;
     }
+
+    &:first-child {
+      @include media(565px) {
+          height: 480px;
+      }
+    }
   }
 
   &__img {
@@ -37,6 +43,12 @@
       padding: 40px 55px 70px;
       width: 390px;
     }
+
+    @include media(565px) {
+      padding: 24px;
+      width: 250px;
+      bottom: 200px;
+    }
   }
 
   &__descript {
@@ -51,6 +63,11 @@
       font-size: 14px;
       line-height: 1.6;
       max-width: 100%;
+    }
+
+    @include media(565px) {
+      font-size: 12px;
+      line-height: 1.5;
     }
   }
 }
@@ -67,6 +84,10 @@
     font-size: 29px;
     line-height: 1.3;
   }
+
+  @include media(565px) {
+    font-size: 20px;
+  }
 }
 
 .slider-wrap {
@@ -79,6 +100,11 @@
   @include media(1024px) {
     width: 100%;
     left: 0;
+  }
+
+  @include media(565px) {
+    bottom: auto;
+    position: relative;
   }
 
   .slick-prev-custom, .slick-next-custom {
@@ -99,6 +125,10 @@
       bottom: auto;
       top: 110px;
     }
+
+    @include media(565px) {
+      left: 20px;
+    }
   }
 
   .slick-next-custom {
@@ -108,6 +138,10 @@
     @include media(1024px) {
       bottom: auto;
       top: 110px;
+    }
+
+    @include media(565px) {
+      left: 120px;
     }
   }
 }
@@ -123,6 +157,10 @@
       background: rgba(248, 248, 248, 1);
       height: 190px;
     }
+
+    @include media(565px) {
+      height: 100%;
+    }
   }
 
   &__wrap-descript {
@@ -134,6 +172,10 @@
     @include media(1024px) {
       height: 150px;
     }
+
+    @include media(565px) {
+      margin-left: 20px;
+    }
   }
 
   &__title {
@@ -141,6 +183,11 @@
     line-height: 17px;
     color: rgba(28, 36, 47, 0.54);
     margin-bottom: 10px;
+
+    @include media(565px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 
   &__name-people {
@@ -149,6 +196,11 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-transform: uppercase;
+
+    @include media(565px) {
+      font-size: 11px;
+      line-height: 2.1;
+    }
   }
 
   &__img {
@@ -194,12 +246,21 @@
       align-items: center;
     }
 
+    @include media(565px) {
+      right: calc(50% - 120px);
+      bottom: -85px;
+    }
+
     &::after {
       content: url("./public/images/slider/line.png");
 
       @include media(1024px) {
         margin-bottom: 20px;
         content: url("./public/images/slider/line2.png");
+      }
+
+      @include media(565px) {
+        display: none;
       }
     }
 
@@ -217,6 +278,12 @@
 
     @include media(1024px) {
       margin: 0 60px 10px 0;
+    }
+
+    &:last-child {
+      @include media(565px) {
+        margin-right: 0;
+      }
     }
 
     &.slick-active {
@@ -247,5 +314,11 @@
 
   @include media(1024px) {
     display: none;
+  }
+}
+
+.slick-slide img {
+  @include media(565px) {
+    width: 40%;
   }
 }

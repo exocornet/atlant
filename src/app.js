@@ -16,3 +16,6 @@ import './blocks/completed-projects/slider-completed-project'
 import './blocks/blog/slider-blog'
 
 
+import './blocks/header/header'
+
+
