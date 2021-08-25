@@ -126,6 +126,12 @@ img {
       max-width: 65%;
     }
 
+    @include media(565px) {
+      max-width: 100%;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
     &_ondark-bg {
       font-weight: normal;
       font-size: 16px;
@@ -156,8 +162,9 @@ img {
     @include media(565px) {
       width: 100%;
       padding-right: 0;
-      padding-left: 0;
       margin-right: 0;
+      padding-left: 5px;
+      box-sizing: border-box;
     }
 
     &:focus-visible {

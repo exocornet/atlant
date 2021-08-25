@@ -28,10 +28,10 @@ $('.slider-blog').slick({
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 565,
       settings: {
-        arrows: false,
-        centerPadding: '0px',
+        arrows: true,
+        centerPadding: '10px',
         slidesToShow: 1
       }
     }
