@@ -14,6 +14,14 @@
     height: 535px;
     position: relative;
 
+    @include media(1024px) {
+      flex-shrink: 1;
+
+      &:first-child {
+        width: 70%;
+      }
+    }
+
     &:hover .houses-cost__hover-wrapper {
       width: calc(100% + 50px);
       transition: all 1.5s;
@@ -36,6 +44,10 @@
       opacity: 1;
       right: -60px;
       transition: all 2.5s;
+
+      @include media(565px) {
+        right: 50px;
+      }
     }
   }
 
@@ -56,6 +68,11 @@
     color: #ffffff;
     margin: 0 0 55px 55px;
     width: 270px;
+
+    @include media(565px) {
+      margin: 0 0 55px 20px;
+      width: 100%;
+    }
   }
 
   .descript {
@@ -108,4 +125,8 @@
   right: 0;
   opacity: 0;
   transition: all .5s;
+
+  @include media(565px) {
+    top: -35px;
+  }
 }

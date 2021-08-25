@@ -70,6 +70,12 @@
       line-height: 1.5;
     }
   }
+
+  .slick-slide img {
+    @include media(565px) {
+      width: 40%;
+    }
+  }
 }
 
 .h1 {
@@ -314,11 +320,5 @@
 
   @include media(1024px) {
     display: none;
-  }
-}
-
-.slick-slide img {
-  @include media(565px) {
-    width: 40%;
   }
 }

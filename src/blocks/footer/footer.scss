@@ -81,6 +81,12 @@
     bottom: 160px;
   }
 
+  @include media(565px) {
+    left: 0;
+    right: auto;
+    bottom: 120px;
+  }
+
   &__link {
     text-decoration: none;
     margin-right: 40px;
