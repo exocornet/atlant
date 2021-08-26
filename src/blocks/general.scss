@@ -83,6 +83,7 @@ img {
   border: 0;
   padding: 15px 50px;
   cursor: pointer;
+  text-decoration: none;
 
   @include media(565px) {
     width: 100%;
@@ -163,7 +164,7 @@ img {
       width: 100%;
       padding-right: 0;
       margin-right: 0;
-      padding-left: 5px;
+      text-align: center;
       box-sizing: border-box;
     }
 

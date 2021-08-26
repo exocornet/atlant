@@ -3,6 +3,11 @@
   border-bottom: 1px solid rgba(28, 36, 47, 0.15);
   padding-bottom: 70px;
 
+  @include media(565px) {
+    margin-top: 55px;
+    padding-bottom: 0;
+  }
+
   &__items {
     display: flex;
     justify-content: space-between;

@@ -1,5 +1,9 @@
 .blog {
   margin-top: 65px;
+
+  @include media(565px) {
+    margin-top: 5px;
+  }
 }
 
 .slider-blog {
