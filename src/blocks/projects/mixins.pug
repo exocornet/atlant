@@ -1,7 +1,8 @@
 mixin pojectItem (data)
   .hover-wrapper
     .project-item
-      img(src='public/images/projects/' + data.img).project-item__img
+      img(src='./public/images/projects/' + data.img).project-item__img
+      img(src="./public/images/projects/progect-plan1.png").project-item__img_hover
 
       //- Описание под картинкой
       .project-item__descript
@@ -10,8 +11,9 @@ mixin pojectItem (data)
           div
             span.project-item__descript-text= data.square
             span.project-item__descript-text.project-item__descript-text_indent= data.rooms
-        .project-item__descript_bottom
+        .project-item__descript_bottom.project-item__descript_bottom_mobile
           span.project-item__descript-price= data.price
+          a(href="#").project-item__descript-link.project-item__descript-link_mobile подробнее
 
       //- Описание под картинкой при наведении
       .project-item__descript_hover

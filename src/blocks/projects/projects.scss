@@ -111,6 +111,19 @@
 
   &__img {
     width: 100%;
+
+    &_hover {
+      display: none;
+      width: 100%;
+    }
+  }
+
+  &:hover &__img {
+    display: none;
+  }
+
+  &:hover &__img_hover {
+    display: block;
   }
 
   &__descript {
@@ -121,6 +134,10 @@
     &_top {
       display: flex;
       justify-content: space-between;
+
+      @include media(1024px) {
+        align-items: center;
+      }
     }
 
     &_middle {
@@ -129,6 +146,14 @@
 
     &_bottom {
       text-align: right;
+
+      &_mobile {
+        @include media(1024px) {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
+        }
+      }
 
       &_hover {
         margin-top: 40px;
@@ -142,6 +167,15 @@
     font-weight: 500;
     font-size: 36px;
     line-height: 44px;
+
+    @include media(1024px) {
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    @include media(565px) {
+      font-size: 20px;
+    }
   }
 
   &__descript-text {
@@ -170,9 +204,22 @@
     color: #c5000e;
     text-decoration: none;
 
+    @include media(1024px) {
+      font-size: 10px;
+      line-height: 2.4;
+    }
+
     &::after {
       content: url("./public/images/projects/arrow-link.png");
       margin-left: 10px;
+    }
+
+    &_mobile {
+      display: none;
+
+      @include media(1024px) {
+        display: block;
+      }
     }
   }
 
