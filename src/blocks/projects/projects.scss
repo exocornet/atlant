@@ -71,8 +71,10 @@
     width: 100%;
   }
 
-  &:hover {
-    height: 200px;
+  @include min-media(1024px) {
+    &:hover {
+      height: 200px;
+    }
   }
 }
 
