@@ -80,10 +80,12 @@
   margin-bottom: 55px;
   cursor: pointer;
 
-  &:hover {
-    outline: 1px solid #dfdfdf;
-    box-shadow: 0 0 4px 3px rgba(223, 223, 223, 1);
-    height: auto;
+  @include min-media(1024px) {
+    &:hover {
+      outline: 1px solid #dfdfdf;
+      box-shadow: 0 0 4px 3px rgba(223, 223, 223, 1);
+      height: auto;
+    }
   }
 
   &__descript_hover {
@@ -95,18 +97,19 @@
     top: -30px;
   }
 
+  @include min-media(1024px) {
+    &:hover &__descript {
+      display: none;
+    }
 
-  &:hover &__descript {
-    display: none;
-  }
-
-  &:hover &__descript_hover {
-    background: #fff;
-    top: 0;
-    opacity: 1;
-    transition: all 0.5s;
-    position: relative;
-    z-index: 1000;
+    &:hover &__descript_hover {
+      background: #fff;
+      top: 0;
+      opacity: 1;
+      transition: all 0.5s;
+      position: relative;
+      z-index: 1000;
+    }
   }
 
   &__img {
@@ -118,12 +121,14 @@
     }
   }
 
-  &:hover &__img {
-    display: none;
-  }
+  @include min-media(1024px) {
+    &:hover &__img {
+      display: none;
+    }
 
-  &:hover &__img_hover {
-    display: block;
+    &:hover &__img_hover {
+      display: block;
+    }
   }
 
   &__descript {

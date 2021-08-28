@@ -4,6 +4,12 @@
   }
 }
 
+@mixin min-media($media) {
+  @media only screen and (min-width: $media) {
+    @content;
+  }
+}
+
 
 body {
   font-family: 'Montserrat', sans-serif;
