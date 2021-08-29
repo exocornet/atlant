@@ -1,6 +1,15 @@
-.modal-window
+.modal-window#modal1
   .modal-window__input-wrap
+    button(data-modal-close).modal-window__btn-close X
     h2.heading.heading_modal-window Заказать звонок
     input(type='tel' placeholder='Ваш телефон').modal-window__input
     button.button.button_modal-window Заказать звонок
-  .modal-window__close
+  div(data-modal-close).modal-window__close
+
+.modal-window#modal2
+  .modal-window__input-wrap
+    button(data-modal-close).modal-window__btn-close X
+    h2.heading.heading_modal-window Заказать звонок222
+    input(type='tel' placeholder='Ваш телефон').modal-window__input
+    button.button.button_modal-window Заказать звонок
+  div(data-modal-close).modal-window__close

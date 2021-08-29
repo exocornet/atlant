@@ -1,7 +1,3 @@
-:root {
-  --url-image: "./public/images/";
-}
-
 @mixin media($media) {
   @media only screen and (max-width: $media) {
     @content;
