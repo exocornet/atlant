@@ -17,6 +17,15 @@ header.header.container-wrap
 
   //- Меню
   .header__menu
+    .header__link.header__link_drop-menu Строительство
+      div.sub-menu
+        a(href='#').header__link Меню
+        a(href='#').header__link Меню
+        a(href='#').header__link Меню
+        a(href='#').header__link Меню
+        a(href='#').header__link Меню
+        a(href='#').header__link Меню
+
     for link in linkMenu
       a(href=link.pageUrl).header__link= link.pageName
 
