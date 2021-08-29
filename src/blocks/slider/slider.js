@@ -55,12 +55,4 @@ $('.slider-header').slick({
   ]
 });
 
-// $('.slider-controls').slick({
-//     centerMode: true,
-//     slidesToShow: 4,
-//     asNavFor: '.slider-header',
-//     draggable: false,
-//     arrows: false
-// });
-
 setProgress(0);
