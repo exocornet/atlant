@@ -27,7 +27,7 @@
           <div class="sub-menu"><a class="header__link" href="#">Меню</a><a class="header__link" href="#">Меню</a><a class="header__link" href="#">Меню</a><a class="header__link" href="#">Меню</a><a class="header__link" href="#">Меню</a><a class="header__link" href="#">Меню</a></div>
         </div><a class="header__link" href="#">Проекты</a><a class="header__link" href="#">Услуги</a><a class="header__link" href="#">Галерея объектов</a><a class="header__link" href="#">Отзывы</a><a class="header__link" href="#">Контакты</a>
       </div>
-      <div class="telephon-wrapper"><a class="header__tel" href="tel:88007700133">8 (800) 770-01-33</a><span class="header__tel-inscript" data-modal-window>Заказать звонок</span></div>
+      <div class="telephon-wrapper"><a class="header__tel" href="tel:88007700133">8 (800) 770-01-33</a><span class="header__tel-inscript" data-modal-window="modal1">Заказать звонок</span></div>
       <button class="burger-menu"></button>
     </header>
     <section class="slider">
@@ -35,7 +35,7 @@
       <div class="slider__column">
         <div class="slider__wrap-descript">
           <h1 class="h1">Построим уютный дом вашей мечты</h1>
-          <p class="slider__descript">С гарантией 25 лет и фиксированной ценой на весь срок работы</p><a class="button" href="#" data-modal-window>Узнать стоимость</a>
+          <p class="slider__descript">С гарантией 25 лет и фиксированной ценой на весь срок работы</p><a class="button" href="#" data-modal-window="modal2">Узнать стоимость</a>
         </div>
         <div class="slider-wrap">
           <div class="progress-bar">
@@ -401,13 +401,23 @@
 </a></div>
       </div>
     </footer>
-    <div class="modal-window">
+    <div class="modal-window" id="modal1">
       <div class="modal-window__input-wrap">
+        <button class="modal-window__btn-close" data-modal-close>X</button>
         <h2 class="heading heading_modal-window">Заказать звонок</h2>
         <input class="modal-window__input" type="tel" placeholder="Ваш телефон">
         <button class="button button_modal-window">Заказать звонок</button>
       </div>
-      <div class="modal-window__close"></div>
+      <div class="modal-window__close" data-modal-close></div>
+    </div>
+    <div class="modal-window" id="modal2">
+      <div class="modal-window__input-wrap">
+        <button class="modal-window__btn-close" data-modal-close>X</button>
+        <h2 class="heading heading_modal-window">Заказать звонок222</h2>
+        <input class="modal-window__input" type="tel" placeholder="Ваш телефон">
+        <button class="button button_modal-window">Заказать звонок</button>
+      </div>
+      <div class="modal-window__close" data-modal-close></div>
     </div>
   <script defer src="/js/main.js"></script></body>
 </html>
