@@ -17,5 +17,5 @@ import './blocks/blog/slider-blog'
 
 
 import './blocks/header/header'
-
+import './blocks/modal-window/modal-window'
 

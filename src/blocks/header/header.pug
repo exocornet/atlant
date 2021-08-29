@@ -1,7 +1,7 @@
 include variables
 
 header.header.container-wrap
-  a(href="tel:88007700133")
+  a(href="tel:88007700133").header__tel-icon
     include ../../public/images/ph.svg
 
   //- Логотип
@@ -30,8 +30,9 @@ header.header.container-wrap
       a(href=link.pageUrl).header__link= link.pageName
 
   //- Телефон
-  a(href='tel:88007700133').header__tel 8 (800) 770-01-33
-    span.header__tel-inscript Заказать звонок
+  .telephon-wrapper
+    a(href='tel:88007700133').header__tel 8 (800) 770-01-33
+    span(data-modal-window).header__tel-inscript Заказать звонок
 
   //- Бургер меню
   button.burger-menu
