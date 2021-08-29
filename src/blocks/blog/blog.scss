@@ -102,11 +102,15 @@
 }
 
 .progress-num {
-  display: flex;
   justify-content: center;
   position: absolute;
   width: 100%;
   bottom: -38px;
+  display: none;
+
+  @include media(565px) {
+    display: flex;
+  }
 }
 
 .slider__num-label {
